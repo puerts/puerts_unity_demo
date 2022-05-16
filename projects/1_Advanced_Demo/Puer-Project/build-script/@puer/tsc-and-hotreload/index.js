@@ -3,7 +3,7 @@ const CS = puertsRequire('csharp');
 require('ts-node').register({ project: `${__dirname}/tsconfig.json` });
 
 exports.compileTS = function (tsConfigPath) {
-    require('./compile.ts').default(tsConfigPath);
+    require('./run-ts.ts').default(tsConfigPath);
 }
 
 exports.watch = function (tsConfigPath) {
